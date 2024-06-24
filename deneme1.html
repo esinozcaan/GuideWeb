@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giris yap</title>
+    <style>
+        body {
+            background-image: url(images/background.jpg); /* Arka plan resmi */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Arkası blurlu kutu için yarı saydam beyaz arka plan */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Gölgelendirme efekti */
+            text-align: center;
+        }
+        
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Giris yap</h2>
+        <form action="giris.php" method="post">
+            <input type="email" name="user" placeholder="Email" required>
+            <input type="password" name="pass" placeholder="Sifre" required>
+            <input type="submit" value="Kaydet">
+        </form>
+    </div>
+</body>
+</html>
