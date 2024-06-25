@@ -94,7 +94,7 @@ $ekle=mysqli_query($baglanti,"INSERT INTO $tablo(ad,email,mesaj) values('$Ad','$
 	<script src="js/superfish.js"></script>
 
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=--YOURAPIKEY--&sensor=false"></script>
 	<script src="js/google_map.js"></script>
 
 	<!-- Main JS -->
